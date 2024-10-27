@@ -8,8 +8,8 @@ import {
   Message,
 } from "semantic-ui-react";
 import { useState } from "react";
-import provider from "../provider";
-import contactFactory from "../contactFactory";
+import provider from "../provider.js";
+import contactFactory from "../contactFactory.js";
 
 const AddContact = () => {
   const [telegram, setTelegram] = useState();
