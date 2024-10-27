@@ -18,13 +18,15 @@ const ShowContact = () => {
     setTelegram("");
     setDiscord("");
     setDesc("");
-    setIsLoading(true);
+
     setErrorMessage("");
 
     if (!address) {
       setErrorMessage("Адрес пользователя не может быть пустым!");
       return;
     }
+
+    setIsLoading(true);
 
     try {
       const contact = await getContactByAddress(address);
